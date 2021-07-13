@@ -1,0 +1,79 @@
+body {
+    font: 20px/1.5 sans-serif;
+    background:rgb(40, 39, 48);
+}
+
+.tabs {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tab-name {
+    display:inline-block;
+    margin-left: -6px;
+    text-align: center;
+    font-size: 2vw;
+    width: 30%;
+    padding: 1%;
+    color: #5ffbf1;
+    text-decoration: none;
+    background: #00adb5;
+}
+
+.tab-content-item {
+    width: 90%;
+    margin-left: -6px;
+    padding: 3%;
+    background: #393e46;
+    display: none;
+    column-count: 3;
+}
+
+h1 {
+    color:white;
+    font-size: 2vw;
+}
+
+h2 {
+    color: mediumslateblue;
+    font-size: 1.5vw;
+}
+
+p {
+    color: mistyrose;
+    font-size: 1.5vw;
+}
+
+[data-tab="html"]:hover ~ .tabs-content > [data-tab-content="html"] {
+    display: block;
+}
+
+[data-tab="html"]:focus ~ .tabs-content > [data-tab-content="html"] {
+    display: block;
+}
+
+[data-tab="css"]:hover ~ .tabs-content > [data-tab-content="css"] {
+    display: block;
+}
+
+[data-tab="css"]:focus ~ .tabs-content > [data-tab-content="css"] {
+    display: block;
+}
+
+[data-tab="js"]:hover ~ .tabs-content > [data-tab-content="js"] {
+    display: block;
+}
+
+[data-tab="js"]:focus ~ .tabs-content > [data-tab-content="js"] {
+    display: block;
+}
+
+.tab-name:hover {
+    border-bottom-width: 3px;
+    border-bottom-style: solid; 
+    border-bottom-color: white;
+}
+
+img {
+    max-width: 100%;
+}
